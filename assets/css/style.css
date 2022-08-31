@@ -8,29 +8,34 @@ body {
     display: flex;
     flex-direction: column;
 }
+/* Spreading out the h1 and nav bar */
 header {
     display: flex;
     justify-content: space-around;
 }
  header {
     background-image: url(../images/Binary_blue.jpg);
-    height: 150px;
+    height: 7em;
 }
 
+/* Centering h1 text, changing color, changing font size */
 h1 {
     text-align: center;
     color: azure;
     font-size: 36px;
 }
 
+/* Displaying nav bar horizontally */
 nav ul {
     display: inline-flex;
     list-style: none;
     margin-top: 45px;
 }
+
+
 nav li {
     text-align: right;
-    margin-right: 10px;
+    margin-right:  2em;
 }
 
 nav a, footer a {
@@ -53,15 +58,22 @@ h2 {
 }
 
 .bio {
+    position: relative;
     color: navy;
     margin: 3.5em 2em; 
-    padding: 5px;
+    padding: 8px;
     border: 3px solid rgb(48, 63, 148);
     box-shadow: 3px 6px rgb(48, 63, 148);
 }
 
+.bio p {
+    margin-left: 15%;
+}
+
 #profile {
-    float: left;
+    /* position: absolute; */
+    top: 8px;
+    /* float: left; */
     height: 10em;
     width: 10em;
 }
@@ -71,21 +83,38 @@ h2 {
     color: navy;
 }
 
-#work {
+/* Change items in class "large-box to align vertically */
+.large-box {
     display: flex;
     flex-direction: column;
     border: 5px solid rgb(48, 63, 148);
 }
 
-.first > * {
+/* .first {
+    background-image: url(../images/search-engine-optimization.jpg);
+} */
+
+/* All children in class "first" display inline */
+/* .first > * {
     display: inline;
-}
+} */
 
 .first img {
     width: 100%;
-    height: auto;
+    height: 20em;
 }
 
+.project-link {
+    text-align: center;
+    position: relative;
+    top: -25px;
+}
+
+/* #cr-practice {
+    text-align: center;
+} */
+
+/* Change alignment of class "small-boxes" to horizontal */
 .small-boxes {
     display: flex;
     flex-direction: row;
@@ -93,13 +122,14 @@ h2 {
 }
 
 .project {
+    /* background-image: url(../images/bowtie-cat.png); */
     width: 50%;
-    /* height: auto; */
+    height: auto;
 }
 
 .project img {
-    width: 20em;
-    height: 20em;
+    width: 15em;
+    height: 15em; 
 }
 
 footer {
@@ -110,10 +140,14 @@ footer {
 
 footer ul {
     list-style: none;
+    justify-content: center;
+    display: flex;
 }
 
 footer li {
     display: inline-flex;
+    margin-top: 5em;
+    padding-left: 35px;
 }
 
 footer a {
@@ -123,5 +157,12 @@ footer a {
 }
 
 @media screen and (max-width: 768px) {
-    
+    .small-boxes {
+        display: flex;
+        flex-direction: column;
+    }
+    #profile {
+        width: 5em;
+        height: 5em;
+    }
 }
