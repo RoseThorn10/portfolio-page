@@ -165,4 +165,9 @@ footer a {
         width: 5em;
         height: 5em;
     }
+
+    footer a {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
