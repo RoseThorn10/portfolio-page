@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 body {
@@ -27,7 +28,7 @@ h1 {
 }
 
 /* Displaying nav bar horizontally */
-nav ul {
+.navbar ul {
     display: inline-flex;
     list-style: none;
     margin-top: 45px;
@@ -93,16 +94,16 @@ h2 {
 }
 
 /* Change items in class "large-box to align vertically */
-.large-box {
+/* .large-box {
     display: flex;
     flex-direction: column;
     border: 5px solid rgb(48, 63, 148);
-}
+} */
 
-.first img {
+/* .first img {
     width: 100%;
     height: 20em;
-}
+} */
 
 .project-link {
     text-align: center;
@@ -110,19 +111,27 @@ h2 {
     top: -25px;
 }
 
-/* #cr-practice {
+/* /* #cr-practice {
     text-align: center;
-} */
+}
 
-/* Change alignment of class "small-boxes" to horizontal */
+/* Change alignment of class "small-boxes" to horizontal
 .small-boxes {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+} */
+
+.card {
+    margin: 20px;
 }
 
-.project {
-    /* background-image: url(../images/bowtie-cat.png); */
+img {
+    height: 20rem;
+}
+
+/* .project {
+    /* background-image: url(../images/bowtie-cat.png); 
     width: 50%;
     height: auto;
 }
@@ -130,7 +139,7 @@ h2 {
 .project img {
     width: 15em;
     height: 15em; 
-}
+} */
 
 footer {
     background-image: url(../images/Binary_blue.jpg);
