@@ -122,7 +122,12 @@ h2 {
     flex-wrap: wrap;
 } */
 
+.row {
+    justify-content: center;
+}
+
 .card {
+    justify-content: center;
     margin: 20px;
 }
 
