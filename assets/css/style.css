@@ -17,14 +17,13 @@ header {
 }
  header {
     background-image: url(../images/Binary_blue.jpg);
-    height: 7em;
+    height: 7rem;
 }
 
 /* Centering h1 text, changing color, changing font size */
 h1 {
     text-align: center;
     color: azure;
-    font-size: 36px;
 }
 
 /* Displaying nav bar horizontally */
@@ -44,14 +43,15 @@ nav a, footer a {
     color: azure;
 }
 
-nav a {
+.navbar a {
     display: flex;
     justify-content: space-evenly;
 } 
 
-nav a:hover {
+.navbar a:hover {
     font-size: 25px;
     font-weight: bold;
+    color: azure;
 }
 
 h2 {
@@ -80,8 +80,6 @@ h2 {
 }
 
 #profile {
-    /* position: absolute; */
-    /* top: 8px; */
     float: left;
     margin-right: 15px;
     box-sizing: border-box;
@@ -128,7 +126,6 @@ h2 {
 
 .card {
     justify-content: center;
-    margin: 20px;
 }
 
 img {
